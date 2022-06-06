@@ -1,0 +1,67 @@
+// other
+@import "other/bootstrap-reboot";
+
+// шрифты
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+* {
+	font-family: "Roboto", sans-serif;
+}
+
+// @media (max-width: 576px) {
+//     .container{
+//         max-width: 100%;
+//     }
+// }
+// @media (min-width: 576px) {
+//     .container{
+//         max-width: 540px;
+//     }
+// }
+// @media (min-width: 768px) {
+//     .container{
+//         max-width: 720px;
+//     }
+// }
+// @media (min-width: 992px) {
+//     .container{
+//         max-width: 960px;
+//     }
+// }
+// @media (min-width: 1200px) {
+//     .container{
+//         max-width: 1140px;
+//     }
+// }
+// @media (min-width: 1400px) {
+//     .container{
+//         max-width: 1320px;
+//     }
+// }
+// .container{
+//     margin: 0 auto;
+// }
+
+.container {
+	max-width: 1920px;
+}
+
+.container {
+	margin: 0 auto;
+}
+
+@import "vars";
+@import "1header";
+@import "2create";
+
+@media (max-width: 1400px) {
+}
+@media (max-width: 1200px) {
+}
+@media (max-width: 992px) {
+}
+@media (max-width: 768px) {
+}
+@media (max-width: 576px) {
+}
+@media (max-width: 320px) {
+}

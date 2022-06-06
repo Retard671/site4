@@ -1,0 +1,79 @@
+.bg123 {
+	min-height: 2648px;
+	background: url(../img/2create/BGstuff.png) center center/ cover no-repeat;
+}
+
+.container {
+	position: relative;
+}
+.create__img {
+	position: absolute;
+	top: 0px;
+	right: 160px;
+	z-index: 1;
+}
+
+.create {
+	min-height: 638px;
+	padding: 116px 0px 140px 0;
+}
+
+.hero_left_side {
+	height: 317px;
+	width: 489px;
+
+	position: absolute;
+	top: 20px;
+	left: 180px;
+	z-index: 2;
+}
+
+.title {
+	font-weight: 900;
+	font-size: 59px;
+	line-height: 71px;
+	/* or 120% */
+
+	color: #000000;
+	&__create {
+		margin-bottom: 23px;
+	}
+}
+
+.subtitle {
+	font-weight: 500;
+	font-size: 19px;
+	line-height: 26px;
+	/* or 137% */
+
+	color: #000000;
+	&__create {
+		margin-bottom: 35px;
+	}
+}
+
+.btn {
+	&__try_now {
+		margin-right: 45px;
+		width: 200px;
+		height: 65px;
+
+		background: #4ba87d;
+		border: 0px;
+
+		color: #ffffff;
+		font-weight: 900;
+		font-size: 21px;
+	}
+	&__get_demo {
+		width: 200px;
+		height: 65px;
+
+		background: #ffffff;
+		border: 3px solid #4ba87d;
+
+		color: #4ba87d;
+		font-weight: 900;
+		font-size: 21px;
+	}
+}
