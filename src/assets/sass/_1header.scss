@@ -49,9 +49,9 @@
 
 	transition: transform 0.07s linear;
 	&:hover {
-		transform: scale(1.05);
+		transform: scale(1.07);
 	}
-	&__header {
+	&_header {
 		width: 168px;
 		height: 41px;
 		background: #4ba87d;

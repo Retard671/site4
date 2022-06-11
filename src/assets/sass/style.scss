@@ -4,7 +4,7 @@
 // шрифты
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
 * {
-	font-family: "Roboto", sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 
 // @media (max-width: 576px) {
@@ -42,16 +42,17 @@
 // }
 
 .container {
-	max-width: 1920px;
+    max-width: 1920px;
 }
 
 .container {
-	margin: 0 auto;
+    margin: 0 auto;
 }
 
 @import "vars";
 @import "1header";
 @import "2create";
+@import "3lern_more";
 
 @media (max-width: 1400px) {
 }

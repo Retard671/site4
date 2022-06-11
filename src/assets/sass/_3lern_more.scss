@@ -1,0 +1,77 @@
+// 660
+.lerm_more {
+    min-height: 660px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.lerm_more__block {
+    margin: 0 23px;
+}
+
+.img__lerm_more {
+}
+
+.lerm_more {
+    &__content {
+        background-color: #fff;
+        padding: 30px;
+    }
+    &__text {
+        margin-bottom: 24px;
+
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 26px;
+        color: #000000;
+    }
+    &__link {
+        font-weight: 800;
+        font-size: 16px;
+        line-height: 19px;
+        color: #4ba87d;
+        text-decoration: none;
+        &:hover {
+            color: #85e1b6;
+        }
+    }
+}
+
+.lerm_more__block1 {
+    background-color: #fff;
+    width: 320px;
+    height: 449px;
+}
+.lerm_more__block2 {
+    background-color: #fff;
+    width: 320px;
+    height: 445px;
+    margin-top: 90px;
+}
+.lerm_more__block3 {
+    // background-color: rgb(144, 33, 33);
+    width: 365px;
+    height: 324px;
+    margin-top: 150px;
+}
+
+.title {
+    &_lerm_more {
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 48px;
+
+        color: #000000;
+
+        margin-bottom: 24px;
+    }
+}
+.text {
+    &_lerm_more {
+        font-weight: 500;
+        font-size: 19px;
+        line-height: 26px;
+
+        color: #000000;
+    }
+}
