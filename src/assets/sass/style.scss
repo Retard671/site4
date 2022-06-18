@@ -41,8 +41,19 @@
 //     margin: 0 auto;
 // }
 
-.container {
-    max-width: 1920px;
+// .container {
+//     max-width: 1920px;
+// }
+
+@media (min-width: 1440px) {
+    .container {
+        max-width: 1098px;
+    }
+}
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1098px;
+    }
 }
 
 .container {
@@ -53,8 +64,10 @@
 @import "1header";
 @import "2create";
 @import "3lern_more";
+@import "4join";
+@import "5brands";
 
-@media (max-width: 1400px) {
+@media (max-width: 1440px) {
 }
 @media (max-width: 1200px) {
 }

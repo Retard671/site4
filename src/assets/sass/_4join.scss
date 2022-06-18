@@ -1,0 +1,120 @@
+.join {
+    margin-bottom: 52px;
+}
+
+.all_people {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.people {
+    width: 342px;
+    height: 239px;
+    padding: 27px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    &1 {
+        background: url(../img/4join/people1.png) center center/ cover no-repeat;
+    }
+    &2 {
+        background: url(../img/4join/people2.png) center center/ cover no-repeat;
+    }
+    &3 {
+        background: url(../img/4join/people3.png) center center/ cover no-repeat;
+    }
+}
+
+.title {
+    &_people {
+        font-weight: 900;
+        font-size: 34px;
+        line-height: 40px;
+        /* or 118% */
+        color: #ffffff;
+
+        // margin-bottom: 5px;
+    }
+}
+
+.subtitle {
+    &_people {
+        font-weight: 700;
+        font-size: 19px;
+        line-height: 22px;
+        /* or 116% */
+        color: #ffffff;
+    }
+}
+
+.title_join {
+    margin-bottom: 40px;
+
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 48px;
+    /* or 109% */
+
+    text-align: center;
+
+    color: #000000;
+}
+
+.enter_mali {
+    &__form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        margin-bottom: 20px;
+    }
+    &__inp {
+        width: 420px;
+        height: 65px;
+
+        background: #ffffff;
+        border: 1px solid #9f9f9f;
+        border-radius: 5px;
+
+        margin-right: 27px;
+        padding: 20px 25px;
+
+        font-weight: 500;
+        font-size: 21px;
+        letter-spacing: 1.05px;
+        color: #000000;
+    }
+}
+
+.btn {
+    &_enter_mali {
+        width: 221px;
+        height: 65px;
+        background: #4ba87d;
+
+        font-weight: 900;
+        font-size: 21px;
+        line-height: 25px;
+
+        letter-spacing: 1.05px;
+        color: #ffffff;
+    }
+}
+
+.wrap {
+    width: 670px;
+    text-align: center;
+}
+.enter_mali__mail_recived {
+    transition: all 0.5s linear;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 25px;
+
+    letter-spacing: 1.05px;
+    color: #4ba87d;
+    &-disable {
+        opacity: 0;
+    }
+}
