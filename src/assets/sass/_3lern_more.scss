@@ -1,15 +1,16 @@
-// 660
 .lerm_more {
-    min-height: 660px;
+    min-height: 560px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    margin-bottom: 100px;
 }
 .lerm_more__block {
     margin: 0 23px;
 }
 
 .img__lerm_more {
+    width: 100%;
 }
 
 .lerm_more {
@@ -73,5 +74,107 @@
         line-height: 26px;
 
         color: #000000;
+    }
+}
+
+@media (max-width: 1440px) {
+}
+@media (max-width: 1200px) {
+}
+@media (max-width: 992px) {
+}
+@media (max-width: 768px) {
+    .lerm_more {
+        min-height: 360px;
+        margin-bottom: 70px;
+    }
+    .lerm_more__block {
+        margin: 0 15px;
+    }
+
+    .lerm_more {
+        &__content {
+            padding: 18px;
+        }
+        &__text {
+            margin-bottom: 0px;
+
+            font-size: 12px;
+            line-height: 16px;
+        }
+        &__link {
+            font-size: 12px;
+            line-height: 14px;
+        }
+    }
+
+    .lerm_more__block1 {
+        width: 209px;
+        height: 294px;
+    }
+    .lerm_more__block2 {
+        width: 209px;
+        height: 290px;
+        margin-top: 60px;
+    }
+    .lerm_more__block3 {
+        // background-color: rgb(144, 33, 33);
+        width: 232px;
+        height: 206px;
+        margin-top: 90px;
+    }
+
+    .title {
+        &_lerm_more {
+            font-size: 28px;
+            line-height: 31px;
+            margin-bottom: 24px;
+        }
+    }
+    .text {
+        &_lerm_more {
+            font-size: 12px;
+            line-height: 16px;
+        }
+    }
+}
+@media (max-width: 576px) {
+    .lerm_more {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    .lerm_more {
+    }
+    .lerm_more__block1 {
+        margin: 15px 60px;
+        align-self: flex-start;
+    }
+
+    .lerm_more__block2 {
+        margin: 15px 60px;
+        align-self: flex-end;
+    }
+    .lerm_more__block3 {
+        margin: 30px 60px;
+        align-self: flex-start;
+    }
+}
+@media (max-width: 320px) {
+    .lerm_more {
+        margin-bottom: 0px;
+    }
+    .lerm_more__block1 {
+        margin: 15px 10px;
+        align-self: flex-start;
+    }
+
+    .lerm_more__block2 {
+        margin: 15px 10px;
+        align-self: flex-end;
+    }
+    .lerm_more__block3 {
+        margin: 30px 10px;
+        align-self: flex-start;
     }
 }

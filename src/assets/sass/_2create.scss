@@ -9,7 +9,7 @@
 .create__img {
     position: absolute;
     top: 0px;
-    right: 160px;
+    right: 1px;
     z-index: 1;
 }
 
@@ -24,7 +24,7 @@
 
     position: absolute;
     top: 20px;
-    left: 180px;
+    left: 1px;
     z-index: 2;
 }
 
@@ -32,7 +32,6 @@
     font-weight: 900;
     font-size: 59px;
     line-height: 71px;
-    /* or 120% */
 
     color: #000000;
     &_create {
@@ -44,7 +43,6 @@
     font-weight: 500;
     font-size: 19px;
     line-height: 26px;
-    /* or 137% */
 
     color: #000000;
     &_create {
@@ -52,8 +50,12 @@
     }
 }
 
+.create__btns {
+    display: flex;
+}
 .btn {
     &_try_now {
+        display: inline-block;
         margin-right: 45px;
         width: 200px;
         height: 65px;
@@ -64,8 +66,17 @@
         color: #ffffff;
         font-weight: 900;
         font-size: 21px;
+        line-height: 65px;
+
+        transition: transform 0.07s linear;
+        &:hover {
+            color: #ffffff;
+            transform: scale(1.07);
+        }
     }
     &_get_demo {
+        box-sizing: border-box;
+        display: inline-block;
         width: 200px;
         height: 65px;
 
@@ -75,12 +86,191 @@
         color: #4ba87d;
         font-weight: 900;
         font-size: 21px;
+        line-height: 65px;
+
+        transition: transform 0.07s linear;
+        &:hover {
+            color: #4ba87d;
+            transform: scale(1.07);
+        }
     }
 }
-.test {
-    transition: transform 0.07s linear;
-    &:hover {
-        transform: scale(1.07);
+
+@media (max-width: 1440px) {
+}
+@media (max-width: 1200px) {
+    .create__img {
+        right: 30px;
+    }
+
+    .hero_left_side {
+        left: 30px;
+    }
+}
+@media (max-width: 992px) {
+}
+@media (max-width: 768px) {
+    .bg123 {
+        min-height: auto;
+    }
+    .create__img {
+        width: 445px;
+        height: 250px;
+    }
+
+    .create {
+        min-height: 350px;
+        padding: 67px 0px 90px 0;
+    }
+
+    .hero_left_side {
+        width: 315px;
+        height: 208px;
+    }
+
+    //
+
+    .title {
+        font-size: 38px;
+        line-height: 46px;
+    }
+
+    .subtitle {
+        font-size: 12px;
+        line-height: 16px;
+
+        color: #000000;
+        &_create {
+            margin-bottom: 35px;
+        }
+    }
+
+    .btn {
+        &_try_now {
+            margin-right: 29px;
+            width: 131px;
+            height: 42px;
+
+            font-size: 13px;
+            line-height: 42px;
+        }
+        &_get_demo {
+            width: 131px;
+            height: 42px;
+
+            font-size: 13px;
+            line-height: 42px;
+        }
+    }
+}
+@media (max-width: 576px) {
+}
+@media (max-width: 476px) {
+    .hero_left_side {
+        left: 5px;
+    }
+    .create__img {
+        top: 80px;
+        right: 0px;
+        // width: 300px;
+        // height: 167px;
+    }
+    .title {
+        margin-bottom: 150px;
+    }
+
+    .subtitle {
+        margin-bottom: 10px;
+    }
+    .create {
+        // min-height: 350px;
+        padding: 17px 0px 90px 0;
+    }
+    .btn {
+        &_try_now {
+            margin-left: 10px;
+        }
+    }
+}
+@media (max-width: 320px) {
+    .create {
+        min-height: 380px;
+        padding: 0px 0px 40px 0;
+    }
+    .container-create {
+        max-width: auto;
+    }
+
+    //
+
+    .hero_left_side {
+        // position: static;
+        left: 10px;
+        width: 94%;
+        // width: 300px;
+        margin: 0 auto;
+    }
+    .create__img {
+        top: 70px;
+        right: 10px;
+        width: 300px;
+        height: 167px;
+    }
+
+    //
+
+    .title {
+        font-size: 36px;
+        line-height: 46px;
+    }
+
+    .subtitle {
+        font-size: 12px;
+        line-height: 16px;
+        margin-bottom: 16px;
+    }
+
+    .btn-create {
+        width: 143px;
+        height: 40.22px;
+        margin-right: 0px;
+        margin-bottom: 10px;
+        &-1 {
+            margin-right: 0px;
+        }
+    }
+    .btn {
+        &_try_now {
+            margin-right: 10px;
+            margin-left: 0px;
+            width: 143px;
+            height: 40.22px;
+
+            font-size: 13px;
+            line-height: 40.22px;
+        }
+        &_get_demo {
+            width: 143px;
+            height: 40.22px;
+
+            font-size: 13px;
+            line-height: 40.22px;
+        }
+    }
+}
+@media (max-width: 319px) {
+    .create__btns {
+        justify-content: space-around;
+    }
+    .btn {
+        &_try_now {
+            margin-right: 14px;
+            margin-left: 10px;
+            width: 113px;
+        }
+        &_get_demo {
+            width: 113px;
+        }
     }
 }
 
@@ -94,7 +284,8 @@
 .more__img {
     position: relative;
     background: url(../img/2create/learn_now.png) center center/ cover no-repeat;
-    max-width: 944px;
+    // max-width: 944px;
+    max-width: 75%;
     height: 531px;
     margin: 0 auto;
     margin-top: 130px;
@@ -121,27 +312,94 @@
         height: 65px;
 
         font-weight: 900;
+        line-height: 65px;
         font-size: 21px;
         text-align: center;
         letter-spacing: 1.05px;
         color: #4ba87d;
+        background: #ffffff;
         border: 0px;
 
         position: absolute;
         bottom: 30%;
         left: calc(50% - 100px);
+        &:hover {
+            color: #4ba87d;
+        }
     }
 }
 
 @media (max-width: 1440px) {
 }
 @media (max-width: 1200px) {
+    .more__img {
+        max-width: 85%;
+        height: 531px;
+    }
 }
 @media (max-width: 992px) {
+    .more__img {
+        height: 431px;
+    }
 }
 @media (max-width: 768px) {
+    .more__img {
+        max-width: 80%;
+        height: 347px;
+    }
+    .title {
+        &_more {
+            font-size: 38px;
+            line-height: 51px;
+        }
+    }
+
+    .btn {
+        &_more {
+            width: 132px;
+            height: 42px;
+
+            font-size: 13px;
+            line-height: 42px;
+
+            left: calc(50% - 71px);
+        }
+    }
 }
 @media (max-width: 576px) {
+    .more__img {
+        max-width: 90%;
+        height: 317px;
+    }
+    .btn {
+        &_more {
+            bottom: 20%;
+        }
+    }
 }
 @media (max-width: 320px) {
+    .more__img {
+        max-width: 92%;
+        height: 171px;
+        margin-top: 40px;
+        margin-bottom: 33px;
+    }
+    .title {
+        &_more {
+            font-size: 22px;
+            line-height: 29px;
+        }
+    }
+
+    .btn {
+        &_more {
+            width: 65px;
+            height: 21px;
+
+            font-size: 6px;
+            line-height: 21px;
+
+            left: calc(50% - 32px);
+        }
+    }
 }

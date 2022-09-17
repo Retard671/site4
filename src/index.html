@@ -7,10 +7,14 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
         <link rel="stylesheet" href="assets/css/style.min.css" />
         <title>Document</title>
+        <script defer src="assets/js/wow.min.js"></script>
+        <!-- <script>
+            new WOW().init();
+        </script> -->
+        <script defer src="assets/js/script.js"></script>
     </head>
     <body>
         <header class="header">
-            <!-- <div class="container"> -->
             <div class="header1">
                 <a class="header__img1" href="#"><img class="header__img" src="assets/img/1header/logo.png" alt="logo.png" /></a>
                 <div class="menu">
@@ -18,14 +22,13 @@
                     <a href="#" class="menu__item">PRICING</a>
                     <a href="#" class="menu__item">SERVICES</a>
                     <a href="#" class="menu__item">PARTNERS</a>
-                    <a href="#"><button class="btn btn_header">SIGN UP FREE</button></a>
+                    <a href="#" class="btn btn_header">SIGN UP FREE</a>
                 </div>
             </div>
-            <!-- </div> -->
         </header>
         <div class="bg123">
-            <!-- <section class="create">
-                <div class="container">
+            <section class="create">
+                <div class="container container-create">
                     <div class="hero_left_side">
                         <h2 class="title title_create wow animate__animated animate__fadeInRight" data-wow-duration="0.5s" data-wow-delay="0.4s">
                             Create Stunning Email Campaigns
@@ -33,12 +36,10 @@
                         <h4 class="subtitle subtitle_create wow animate__animated animate__fadeInRight" data-wow-duration="0.5" data-wow-delay="0.7s">
                             Create and launch email campaigns that captivate your customers in just a few clicks.
                         </h4>
-                        <a href="#" class="test"
-                            ><button class="btn btn_try_now wow animate__animated animate__fadeInDown" data-wow-duration="0.4s" data-wow-delay="1.4s">TRY NOW</button></a
-                        >
-                        <a href="#"
-                            ><button class="btn btn_get_demo wow animate__animated animate__fadeInDown" data-wow-duration="0.4s" data-wow-delay="1.9s">GET A DEMO</button></a
-                        >
+                        <div class="create__btns">
+                            <a href="#" class="btn btn_try_now wow animate__animated animate__fadeInDown" data-wow-duration="0.4s" data-wow-delay="1.4s">TRY NOW</a>
+                            <a href="#" class="btn btn_get_demo wow animate__animated animate__fadeInDown" data-wow-duration="0.4s" data-wow-delay="1.9s">GET A DEMO</a>
+                        </div>
                     </div>
                     <img
                         src="assets/img/2create/hero_photo.png"
@@ -48,11 +49,11 @@
                         data-wow-delay="0.9s"
                     />
                 </div>
-            </section> -->
-            <!-- <section class="more">
+            </section>
+            <section class="more">
                 <div class="more__img">
                     <h4 class="title_more">Reach More Customers</h4>
-                    <a href="#"><button class="btn btn_more">LEARN HOW</button></a>
+                    <a href="#" class="btn btn_more">LEARN HOW</a>
                 </div>
             </section>
             <section class="lerm_more">
@@ -76,40 +77,37 @@
                         Whether you&#8242;re a startup, small business, e-commerce store, or want to promote your app, NinjaMail has the feature set tailored for your business.
                     </div>
                 </div>
-            </section>  -->
-            <section class="join">
-                <div class="container">
-                    <!-- <div class="all_people">
-                        <div class="people people1">
+            </section>
+            <div class="join">
+                <div class="container container-join">
+                    <div class="all_people">
+                        <a href="#" target="_blank" class="people people1">
                             <div class="title title_people">Frankie</div>
                             <div class="subtitle subtitle_people">Member since 2016</div>
-                        </div>
-                        <div class="people people2">
+                        </a>
+                        <a href="#" target="_blank" class="people people2">
                             <div class="title title_people">Camile</div>
                             <div class="subtitle subtitle_people">Member since 2012</div>
-                        </div>
-                        <div class="people people3">
+                        </a>
+                        <a href="#" target="_blank" class="people people3">
                             <div class="title title_people">Elayne</div>
                             <div class="subtitle subtitle_people">Member since 2018</div>
-                        </div>
-                    </div> -->
-                    <div class="title title_join">Learn how others are reaching their audience easier than ever before.</div>
+                        </a>
+                    </div>
+                    <div class="title title_join">
+                        Learn how others are reaching their <br />
+                        audience easier than ever before.
+                    </div>
                     <div class="enter_mail">
-                        <form action="#" method="#" class="enter_mail__form">
-                            <input type="email" name="user_email" class="enter_mail__inp" placeholder="Enter your email" /><br />
-                            <div class="wrap wrap1">
-                                <div class="enter_mail__mail_recived enter_mail__mail_recived-disable">Thanks! Email received.</div>
-                            </div>
-                            <button class="btn btn_enter_mali" type="submit">JOIN OUR LIST</button>
-                            <div class="wrap wrap2">
-                                <div class="enter_mail__mail_recived enter_mail__mail_recived-disable">Thanks! Email received.</div>
-                            </div>
+                        <form action="#" method="post" class="enter_mail__form">
+                            <input type="email" name="user_email" class="enter_mail__inp" placeholder="Enter your email" />
+                            <button class="btn btn_enter_mail" type="submit">JOIN OUR LIST</button>
                         </form>
                     </div>
                 </div>
-            </section>
+            </div>
         </div>
-        <section class="brands_use_us">
+        <div class="brands_use_us">
             <div class="container">
                 <div class="title title_brands_use_us">All the best brands already use us.</div>
                 <div class="brands">
@@ -120,15 +118,15 @@
                     <img src="assets/img/5brands/Logo5.png" alt="Logo5.png" class="brands__img brands__img5" />
                 </div>
             </div>
-        </section>
-        <section class="getstarted">
+        </div>
+        <div class="getstarted">
             <div class="container container_getstarted">
                 <div class="title title_getstarted">Get started today!</div>
                 <button class="btn btn_getstarted">PICK A PLAN</button>
             </div>
-        </section>
+        </div>
 
-        <section class="footer">
+        <div class="footer">
             <div class="container">
                 <div class="topside">
                     <a href="#"> <img class="topside__image" src="assets/img/1header/logo.png" alt="logo.png" /> </a>
@@ -168,12 +166,6 @@
                     <a href="#" class="bottomside__item bottomside__link">Privacy Policy</a>
                 </div>
             </div>
-        </section>
-
-        <script src="assets/js/wow.min.js"></script>
-        <script>
-            new WOW().init();
-        </script>
-        <script src="assets/js/script.js"></script>
+        </div>
     </body>
 </html>
